@@ -1,0 +1,7 @@
+package Projects_OOP.Lection02.Game.v2.Warriors;
+
+import Projects_OOP.Lection02.Game.v2.Hero;
+
+public interface Warrior {
+    public void attack(Hero target);
+}
