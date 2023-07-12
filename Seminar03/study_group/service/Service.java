@@ -4,39 +4,40 @@ import Projects_OOP.Seminar03.study_group.group.StudyGroup;
 import Projects_OOP.Seminar03.study_group.student.Student;
 
 public class Service {
-    private long id;
-    private StudyGroup studyGroup;
+    private int idStudent;
+    private StudyGroup<Student> group;
 
     public Service() {
-        studyGroup = new StudyGroup();
+        group = new StudyGroup<>();
     }
 
-    public void addStudent(String name, int age) {
-        Student student = new Student(id++, name, age);
-        studyGroup.addStudent(student);
+    public void addStudent(String name, int age){
+        Student student = new Student(idStudent++, name, age);
+        group.addStudent(student);
     }
 
     public String getStudentsInfo() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Студенты:\n");
-        // Iterator<Student> iterator = studyGroup.iterator();
-        // while (iterator.hasNext()){
-        // Student student = iterator.next();
-        // stringBuilder.append(student);
-        // stringBuilder.append("\n");
-        // }
-        for (Student student : studyGroup) {
+        stringBuilder.append("Список студентов:\n");
+
+//        Iterator<Student> iterator = group.iterator();
+//        while (iterator.hasNext()){
+//            Student student = iterator.next();
+//            stringBuilder.append(student);
+//            stringBuilder.append("\n");
+//        }
+        for (Student student: group){
             stringBuilder.append(student);
             stringBuilder.append("\n");
         }
         return stringBuilder.toString();
     }
 
-    public void sortByName() {
-        studyGroup.sortByName();
+    public void sortByName(){
+        group.sortByName();
     }
 
-    public void sortByAge() {
-        studyGroup.sortByAge();
+    public void sortByAge(){
+        group.sortByAge();
     }
 }

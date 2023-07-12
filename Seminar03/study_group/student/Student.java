@@ -1,11 +1,13 @@
 package Projects_OOP.Seminar03.study_group.student;
 
-public class Student implements Comparable<Student> {
-    private long id;
+import Projects_OOP.Seminar03.study_group.group.GroupItem;
+
+public class Student implements Comparable<Student>, GroupItem {
+    private int id;
     private String name;
     private int age;
 
-    public Student(long id, String name, int age) {
+    public Student(int id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -20,10 +22,12 @@ public class Student implements Comparable<Student> {
                 '}';
     }
 
+    @Override
     public int getAge() {
         return age;
     }
 
+    @Override
     public String getName() {
         return name;
     }
