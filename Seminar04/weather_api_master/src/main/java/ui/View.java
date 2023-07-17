@@ -1,4 +1,4 @@
-package Projects_OOP.Seminar04.weather_api_master.src.main.java.ui;
+package ui;
 
 public interface View {
     void start();

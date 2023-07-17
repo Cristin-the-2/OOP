@@ -1,6 +1,6 @@
-package Projects_OOP.Seminar04.weather_api_master.src.main.java.ui;
+package ui;
 
-import Projects_OOP.Seminar04.weather_api_master.src.main.java.presenter.Presenter;
+import presenter.Presenter;
 
 import java.util.Scanner;
 

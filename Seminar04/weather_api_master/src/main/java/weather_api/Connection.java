@@ -1,4 +1,4 @@
-package Projects_OOP.Seminar04.weather_api_master.src.main.java.weather_api;
+package weather_api;
 
 import java.net.URL;
 import java.net.URLConnection;
@@ -19,7 +19,7 @@ public class Connection {
         while (scanner.hasNext()) {
             stringBuilder.append(scanner.nextLine());
         }
-
+        scanner.close();
         System.out.println("от сервера пришел ответ: " + stringBuilder);
         return stringBuilder.toString();
     }

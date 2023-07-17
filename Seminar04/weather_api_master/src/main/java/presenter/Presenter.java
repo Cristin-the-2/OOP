@@ -1,8 +1,8 @@
-package Projects_OOP.Seminar04.weather_api_master.src.main.java.presenter;
+package presenter;
 
-import Projects_OOP.Seminar04.weather_api_master.src.main.java.ui.View;
-import Projects_OOP.Seminar04.weather_api_master.src.main.java.weather_api.Service;
-import Projects_OOP.Seminar04.weather_api_master.src.main.java.weather_api.WeatherService;
+import ui.View;
+import weather_api.Service;
+import weather_api.WeatherService;
 
 public class Presenter {
 

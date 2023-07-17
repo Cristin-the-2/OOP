@@ -1,4 +1,4 @@
-package Projects_OOP.Seminar04.weather_api_master.src.main.java.weather_api.weather;
+package weather_api.weather;
 
 public class Location {
     private String lat;
